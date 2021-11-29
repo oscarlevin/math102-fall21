@@ -1,0 +1,104 @@
+\documentclass[11pt]{article}
+
+
+%% Header stuff that you shouldn't need to change.
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{fullpage}
+
+\theoremstyle{plain} % Heading in bold, text in italics.
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{problemstatement}{Problem} % \problem is taken :)
+\newtheorem{question}{Question}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem*{claim*}{Claim}
+\newtheorem*{theorem*}{Theorem}
+\newtheorem*{proposition*}{Proposition}
+\newtheorem*{problemstatement*}{Problem}
+\newtheorem*{corollary*}{Corollary}
+\theoremstyle{definition} % Bold header, roman text
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem*{notation*}{Notation}
+\newtheorem*{definition*}{Definition}
+\newtheorem*{conjecture*}{Conjecture}
+\newtheorem*{example*}{Example}
+\theoremstyle{remark} % Italic header, roman text
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem*{remark*}{Remark}
+\newtheorem{case}{Case}
+\newtheorem{answer}{Answer}
+\newtheorem*{solution}{Solution}
+\newtheorem*{hint}{Hint}
+
+%% End of header stuff
+
+\begin{document}
+\title{MATH 431 HW xxx Initial Version}
+\author{My Name}
+\maketitle
+
+% Lines starting with a % sign are comments and will not appear in the pdf
+
+\section{Problem 3.4.5}
+
+\begin{proposition*}
+  Every function $f$ is blah blah blah.
+  % Dollar signs enter math mode.  Every mathematical symbol and
+  % variable should be in math mode.
+\end{proposition*}
+
+\begin{proof}
+  If $f$ is blah and $x$ is blah blah then $3 \sin x + 4 f - 3$ is
+  blah blah.  Also $\frac{2x+1}{4x+9}$ is blah blah blah.
+  % Use \frac for fractions, much better than $(2x+1)/(4x+9)$.
+  Here is a longer ``display'' equation that goes on its own line.
+  \begin{equation*}
+    \sqrt{\frac{x^2+9}{y-3}+7} +
+    \lim_{n \to \infty} f_n(x) = \int_0^3 g(x)\,dx
+    % \, inserts a small space between g(x) and dx.
+  \end{equation*}
+  Multi line equations can be done as follows:
+  \begin{align*}
+    |f_n(x) - f(x)| &= \left| \frac{2nx}{n+1} - 2x \right| \\
+    &= \left| -\frac{2x}{n+1} \right| \\
+    &< \epsilon
+    % The & signs indicate what should be aligned.  \\ starts a new line.
+  \end{align*}
+  Now the proof is complete.
+\end{proof}
+
+% if you leave off the * you get a number you can refer back to.
+\begin{proposition}\label{coolprop}
+  A proposition with a number.
+\end{proposition}
+
+\begin{proof}
+  Blah blah blah.
+\end{proof}
+
+Now let's refer back to Proposition \ref{coolprop}.
+
+Here is an equation with a number that you can refer back to.
+\begin{equation}\label{fancy}
+  e^{i \pi} + 1 = 0
+\end{equation}
+Equation \eqref{fancy} is super fancy.
+
+You can get ``blackboard bold'' with $\mathbb{R}, \mathbb{Q},
+\mathbb{Z}$, etc.
+
+\section{Another problem}
+
+Et cetera.
+
+\end{document}

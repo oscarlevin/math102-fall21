@@ -1,0 +1,102 @@
+\documentclass[11pt]{exam}
+
+\usepackage{amsmath, amssymb, multicol}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
+
+
+
+\def\d{\displaystyle}
+\def\b{\mathbf}
+\def\R{\mathbf{R}}
+\def\Z{\mathbf{Z}}
+\def\st{~:~}
+\def\bar{\overline}
+\def\inv{^{-1}}
+
+
+%\pointname{pts}
+\pointsinmargin
+\marginpointname{pts}
+\addpoints
+\pagestyle{head}
+%\printanswers
+
+\firstpageheader{MATH 102}{\bf Getting Unstuck}{Thursday, September 9}
+
+\begin{document}
+Everyone gets stuck on some math problems.  It's what happens next that matters.  How can you persevere and solve the problem?  Today we will look at a few fun math puzzles that illustrate techniques to break through stuckiness.
+
+\begin{questions}
+  \question Is it possible to connect $A$ to $A$, $B$ to $B$ and $C$ to $C$ in the picture below, without crossing lines or leaving the box?
+
+  \begin{center}
+    \begin{tikzpicture}
+      \draw (.5,0) rectangle (8.25,3);
+      \draw (2,0) rectangle (2.75,.5) node[midway]{$A$} (4,0) rectangle (4.75,.5) node[midway]{$B$} (6,0) rectangle (6.75, .5) node[midway]{$C$};
+      \draw (2,2) rectangle (2.75, 2.5) node[midway]{$C$} (4,2.5) rectangle (4.75, 3) node[midway]{$B$} (6,2) rectangle (6.75,2.5) node[midway]{$A$};
+    \end{tikzpicture}
+  \end{center}
+
+  \question The numbers 1 through 100 are written on the board.  You and a friend take turns selecting any two numbers $x$ and $y$ on the board, erase them, and write $xy + x + y$ in their place.  What possible numbers will remain on the board after 99 turns?
+
+  \question Late one night, four weary travelers come to an old rickety rope bridge over an crocodile infested gorge. With planks missing here and there, it is not safe to cross without the group's lone flashlight. Also, the bridge does not appear to be able to support more than two people at a time.
+
+The four travelers (oddly named John, Paul, George, and Ringo) each have a varying level of mobility. John can cross in 1 minute, Paul needs 2 minutes, George needs 5 minutes, and Ringo cannot cross in less than 10 minutes. Of course when two travelers cross the bridge, they must travel at the pace of the slower of the two.
+
+With a horde of bloodthirsty fans not far behind the travelers, what is the shortest amount of time needed to cross the bridge? How do they do it?
+
+
+\question A commuter rides the train to and from work each day. Her husband meets her at the train station and drives her home. One day the commuter leaves work early, catches a different train and arrives at the station one hour ahead of schedule. It being a nice day, she decides to walk toward home. Somewhere along the way she meets her husband, driving from home to pick her up at the usual time. She gets in the car and they drive back, arriving 20 minutes earlier than normal. How long was the commuter walking?
+
+\question Define a \textbf{selfish} set to be a set which has its own cardinality (number of elements) as an element.  Find the number of subsets of $\{1, 2, \ldots, n\}$ which are \emph{minimal} selfish sets, that is, selfish sets none of whose proper subsets is selfish.
+
+\question Consider the function $f:\Z^+ \to \Z^+$ that satisfies $f(1) = 1$, $f(2n) = f(n)$ and $f(2n+1) = f(2n)+1$.  What is $f(2018)$?
+
+\question Here is a way to create a sequence of numbers.  Start with a number $n$.  If $n$ is even, divide it by 2.  If $n$ is odd, multiply it by 3 and add 1.  Then repeat with your new number.  Is there some $n$ you can start with for which $1$ will NOT be an element in the sequence?
+
+
+
+
+
+  \clearpage
+
+  \begin{center}
+   {\bf \Large Harry Potter and the Hall of 100 Doors}
+  \end{center}
+
+
+  In their frantic pursuit of the Dark Lord, Harry Potter and his friends found themselves at the end of a long hallway, open doors along one side, as far as the eye can see.
+
+  ``What is this place?'' asked Harry.
+
+  ``Haven't you read {\it Hogwarts, a History} by now, Harry?'' asked Hermione.
+
+  ``I think I've been pretty busy saving all your asses over the years, thank you very much.  Why don't you just tell me.''
+
+  ``Well alright.  This is clearly the Hall of One Hundred Doors!''
+
+  ``Great,'' said Ron.  ``Now can we get going?  He's getting away.''
+
+  ``Not yet,'' replied Hermione. ``If we pass through without first closing exactly the correct doors, we face certain peril.''
+
+  ``So which doors do we close?'' asked Harry and Ron in unison.
+
+  ``I'm not sure,'' mused Hermione.  ``The problem is, it's not that simple.  The legend states that one must first close every door; all 100.  Then you go back and open ever other door.  After that, you go to every third door and open the closed ones, and close the open ones.  Then again to every 4th door.  And you keep doing this until you only open or close the 100th door.''
+
+  ``That will take {\it forever},'' whined Ron.  ``We'll never catch up to him now.''
+
+  ``What if we could just close the doors that would be closed after that long process?'' asked Harry.  ``Would that work?''
+
+  ``Well yes, of course.  But how in the name of Dumbledore will we know which ones to close?''
+
+  ``Come on,'' yelled Harry, already closing the first door.  ``I'll explain as we go!''
+
+  And with that, the three friends set down the hall, closing the correct doors as they went.  But which doors was Harry closing?  And how did he know?
+\end{questions}
+
+
+
+\end{document}
